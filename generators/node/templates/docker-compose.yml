@@ -1,0 +1,15 @@
+version: "3.4"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+    environment:
+      PORT: 3000
+      NODE_ENV: development

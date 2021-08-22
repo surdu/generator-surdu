@@ -32,6 +32,5 @@ module.exports = class extends Generator {
       this.destinationPath(`${this.answers.name}/${this.answers.name}.module.scss`),
       this.answers
     );
-
   }
 };
